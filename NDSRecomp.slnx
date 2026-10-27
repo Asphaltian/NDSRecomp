@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NDSRecomp/NDSRecomp.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/NDSRecomp.Tests/NDSRecomp.Tests.csproj" />
+  </Folder>
+</Solution>

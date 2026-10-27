@@ -1,0 +1,209 @@
+
+# Unreferenced symbols:
+
+
+# Link map of _start
+  1](SVC_SoftReset,notype) found in global libsyscall.a
+  1](_start,func) found in global crt0.o
+   2](NitroMain,func) found in global main.o
+    3](OverlayFunc,func) found in global overlay.o
+    3](.data,section) found in local main.o
+    3](FastCopy,func) found in global itcm.o
+
+# .main
+#>02000000          SDK_STATIC_START (linker command file)
+#>02000000          SDK_STATIC_TEXT_START (linker command file)
+  02000000 00000004 .text   .text	(libsyscall.a syscall.o/     )
+  02000000 00000004 .text   SVC_SoftReset	(libsyscall.a syscall.o/     )
+  02000000 00000000 .text   $t	(libsyscall.a syscall.o/     )
+  02000004 00000000 .text   $a	(crt0.o)
+  02000004 0000002C .text   .text	(crt0.o)
+  02000004 00000004 .text   _start	(crt0.o)
+  02000008 00000004 .text   _start_AutoloadDoneCallback	(crt0.o)
+  0200000C 00000000 .text   _start_ModuleParams	(crt0.o)
+  0200000C 00000000 .text   $d	(crt0.o)
+  02000030 00000024 .text   NitroMain	(main.o)
+  02000030 00000034 .text   .text	(main.o)
+  02000030 00000000 .text   $a	(main.o)
+  0200004C 00000000 .text   $d	(main.o)
+  02000054 00000000 .text   $t	(main.o)
+  02000054 00000008 .text   ThumbMain	(main.o)
+  02000056 00000000 .text   $b	(main.o)
+  0200005C 00000004 .text   ThumbHelper	(main.o)
+  02000060 00000000 .text   Unsized	(main.o)
+  02000060 00000000 .text   $a	(main.o)
+#>02000064          SDK_STATIC_ETABLE_START (linker command file)
+# Exception index
+  02000064 00000000         Exception Table Index	()
+#>02000064          SDK_STATIC_ETABLE_END (linker command file)
+#>02000064          SDK_STATIC_SINIT_START (linker command file)
+#>02000068          SDK_STATIC_SINIT_END (linker command file)
+#>02000080          SDK_STATIC_TEXT_END (linker command file)
+#>02000080          SDK_STATIC_DATA_START (linker command file)
+  02000080 00000000 .data   SomeData	(main.o)
+  02000080 00000004 .data   .data	(main.o)
+#>02000084          SDK_OVERLAY_DIGEST (linker command file)
+#>02000084          SDK_OVERLAY_DIGEST_END (linker command file)
+#>020000A0          SDK_STATIC_DATA_END (linker command file)
+#>020000A0          SDK_STATIC_END (linker command file)
+#>00000080          SDK_STATIC_TEXT_SIZE (linker command file)
+#>00000020          SDK_STATIC_DATA_SIZE (linker command file)
+#>000000A0          SDK_STATIC_SIZE (linker command file)
+#>02000064          __sinit__ (linker command file)
+#>02000064          __exception_table_start__ (linker command file)
+#>02000064          __exception_table_end__ (linker command file)
+
+# .main.bss
+#>020000A0          SDK_STATIC_BSS_START (linker command file)
+#>020000A0          SDK_STATIC_BSS_END (linker command file)
+#>00000000          SDK_STATIC_BSS_SIZE (linker command file)
+#>01FF8000          SDK_AUTOLOAD.ITCM.START (linker command file)
+#>01FF8000          SDK_AUTOLOAD.ITCM.END (linker command file)
+#>01FF8000          SDK_AUTOLOAD.ITCM.BSS_END (linker command file)
+#>00000000          SDK_AUTOLOAD.ITCM.SIZE (linker command file)
+#>00000000          SDK_AUTOLOAD.ITCM.BSS_SIZE (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.START (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.END (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.BSS_END (linker command file)
+#>00000000          SDK_AUTOLOAD.DTCM.SIZE (linker command file)
+#>00000000          SDK_AUTOLOAD.DTCM.BSS_SIZE (linker command file)
+#>020000A0          SDK_AUTOLOAD_START (linker command file)
+#>00000000          SDK_AUTOLOAD_SIZE (linker command file)
+#>00000002          SDK_AUTOLOAD_NUMBER (linker command file)
+
+# .ITCM
+#>00000000          SDK_AUTOLOAD_ITCM_ID (linker command file)
+#>00000000          SDK_AUTOLOAD.ITCM.ID (linker command file)
+#>01FF8000          SDK_AUTOLOAD.ITCM.START (linker command file)
+#>01FF8000          SDK_AUTOLOAD.ITCM.TEXT_START (linker command file)
+  01FF8000 0000000C .itcm   .itcm	(itcm.o)
+  01FF8000 0000000C .itcm   FastCopy	(itcm.o)
+  01FF8000 00000000 .itcm   $a	(itcm.o)
+#>01FF800C          SDK_AUTOLOAD.ITCM.TEXT_END (linker command file)
+#>01FF800C          SDK_AUTOLOAD.ITCM.DATA_START (linker command file)
+#>01FF8020          SDK_AUTOLOAD.ITCM.DATA_END (linker command file)
+#>01FF8020          SDK_AUTOLOAD.ITCM.END (linker command file)
+#>0000000C          SDK_AUTOLOAD.ITCM.TEXT_SIZE (linker command file)
+#>00000014          SDK_AUTOLOAD.ITCM.DATA_SIZE (linker command file)
+#>00000020          SDK_AUTOLOAD.ITCM.SIZE (linker command file)
+#>00000020          SDK_AUTOLOAD_SIZE (linker command file)
+
+# .ITCM.bss
+#>01FF8020          SDK_AUTOLOAD.ITCM.BSS_START (linker command file)
+#>01FF8020          SDK_AUTOLOAD.ITCM.BSS_END (linker command file)
+#>00000000          SDK_AUTOLOAD.ITCM.BSS_SIZE (linker command file)
+
+# .DTCM
+#>00000001          SDK_AUTOLOAD_DTCM_ID (linker command file)
+#>00000001          SDK_AUTOLOAD.DTCM.ID (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.START (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.TEXT_START (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.TEXT_END (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.DATA_START (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.DATA_END (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.END (linker command file)
+#>00000000          SDK_AUTOLOAD.DTCM.TEXT_SIZE (linker command file)
+#>00000000          SDK_AUTOLOAD.DTCM.DATA_SIZE (linker command file)
+#>00000000          SDK_AUTOLOAD.DTCM.SIZE (linker command file)
+#>00000020          SDK_AUTOLOAD_SIZE (linker command file)
+
+# .DTCM.bss
+#>027E0000          SDK_AUTOLOAD.DTCM.BSS_START (linker command file)
+#>027E0000          SDK_AUTOLOAD.DTCM.BSS_END (linker command file)
+#>00000000          SDK_AUTOLOAD.DTCM.BSS_SIZE (linker command file)
+#>01FF8000          SDK_AUTOLOAD_ITCM_START (linker command file)
+#>01FF8020          SDK_AUTOLOAD_ITCM_END (linker command file)
+#>01FF8020          SDK_AUTOLOAD_ITCM_BSS_END (linker command file)
+#>00000020          SDK_AUTOLOAD_ITCM_SIZE (linker command file)
+#>00000000          SDK_AUTOLOAD_ITCM_BSS_SIZE (linker command file)
+#>027E0000          SDK_AUTOLOAD_DTCM_START (linker command file)
+#>027E0000          SDK_AUTOLOAD_DTCM_END (linker command file)
+#>027E0000          SDK_AUTOLOAD_DTCM_BSS_END (linker command file)
+#>00000000          SDK_AUTOLOAD_DTCM_SIZE (linker command file)
+#>00000000          SDK_AUTOLOAD_DTCM_BSS_SIZE (linker command file)
+
+# .binary.AUTOLOAD_INFO
+#>020000C0          SDK_AUTOLOAD_LIST (linker command file)
+#>020000D8          SDK_AUTOLOAD_LIST_END (linker command file)
+#>00000038          SDK_AUTOLOAD_SIZE (linker command file)
+
+# .binary.STATIC_FOOTER
+#>00000001          SDK_OVERLAY_NUMBER (linker command file)
+
+# .OVY_0
+#>00000000          SDK_OVERLAY_OVY_0_ID (linker command file)
+#>00000000          SDK_OVERLAY.OVY_0.ID (linker command file)
+#>020000A0          SDK_OVERLAY.OVY_0.START (linker command file)
+#>020000A0          SDK_OVERLAY.OVY_0.TEXT_START (linker command file)
+  020000A0 00000004 .text   .text	(overlay.o)
+  020000A0 00000004 .text   OverlayFunc	(overlay.o)
+  020000A0 00000000 .text   $t	(overlay.o)
+#>020000A4          SDK_OVERLAY.OVY_0.SINIT_START (linker command file)
+#>020000A8          SDK_OVERLAY.OVY_0.SINIT_END (linker command file)
+#>020000C0          SDK_OVERLAY.OVY_0.TEXT_END (linker command file)
+#>020000C0          SDK_OVERLAY.OVY_0.DATA_START (linker command file)
+#>020000C0          SDK_OVERLAY.OVY_0.DATA_END (linker command file)
+#>020000C0          SDK_OVERLAY.OVY_0.END (linker command file)
+#>00000020          SDK_OVERLAY.OVY_0.TEXT_SIZE (linker command file)
+#>00000000          SDK_OVERLAY.OVY_0.DATA_SIZE (linker command file)
+#>00000020          SDK_OVERLAY.OVY_0.SIZE (linker command file)
+
+# .OVY_0.bss
+#>020000C0          SDK_OVERLAY.OVY_0.BSS_START (linker command file)
+#>020000C0          SDK_OVERLAY.OVY_0.BSS_END (linker command file)
+#>00000000          SDK_OVERLAY.OVY_0.BSS_SIZE (linker command file)
+
+# .dummy.MAIN_EX
+
+# .arena.MAIN
+#>020000C0          SDK_SECTION_ARENA_START (linker command file)
+
+# .arena.MAIN_EX
+#>023E0000          SDK_SECTION_ARENA_EX_START (linker command file)
+
+# .arena.ITCM
+#>01FF8020          SDK_SECTION_ARENA_ITCM_START (linker command file)
+
+# .arena.DTCM
+#>027E0000          SDK_SECTION_ARENA_DTCM_START (linker command file)
+
+# .main_defs
+
+# .main_table
+#>020000C0          SDK_MAIN_ARENA_LO (linker command file)
+#>00000800          SDK_IRQ_STACKSIZE (linker command file)
+#>00000000          SDK_SYS_STACKSIZE (linker command file)
+
+# .binary.MODULE_FILES
+
+# .check.ITCM
+#>00000001          SDK_SYS_STACKSIZE_SIGN (linker command file)
+
+# .check.DTCM
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  02000000 02000000 000000A0 main
+  020000A0 020000A0 00000000 main
+  01FF8000 01FF8000 00000020 ITCM
+  01FF8020 01FF8020 00000000 ITCM
+  027E0000 027E0000 00000000 DTCM
+  027E0000 027E0000 00000000 DTCM
+  00000000 00000000 00000018 binary.AUTOLOAD_INFO
+  00000000 00000000 0000000C binary.STATIC_FOOTER
+  020000A0 020000A0 0000001B main_defs
+  020000A0 020000A0 00000020 main_table
+  020000A0 020000A0 00000020 OVY_0
+  020000C0 020000C0 00000000 OVY_0
+  023E0000 023E0000 00000000 dummy.MAIN_EX
+  020000C0 020000C0 00000000 arena.MAIN
+  023E0000 023E0000 00000000 arena.MAIN_EX
+  01FF8020 01FF8020 00000000 arena.ITCM
+  027E0000 027E0000 00000000 arena.DTCM
+  00000000 00000000 00000029 binary.MODULE_FILES
+  00000000 00000000 00000020 check.ITCM
+  00000000 00000000 00000800 check.DTCM
+
+# Link start time: Tue Sep 29 10:55:58 2026
+# Link end time: Tue Sep 29 10:55:58 2026
